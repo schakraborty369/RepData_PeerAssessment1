@@ -39,7 +39,7 @@ hist(s$Total.steps, col = "purple", main = "Histogram for total daily steps", xl
 abline(v = c(mean(s$Total.steps),median(s$Total.steps)), col = c("yellow","red"), lwd=c(4,1))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 ###2c. The mean and median of the total number of steps taken per day
 The mean total number of steps per day = `round(mean(s$Total.steps))`= 10766 steps.
@@ -61,7 +61,7 @@ The plot is therefore run by the following code:
 plot(names(t),t, type = "l", col = "blue", lwd = 2, xlab = "5-min interval", ylab = "Average steps", main = "Plot of the 5-minute interval and the average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 ###3b. Interval with maximum number of steps
 The interval can be determines using the code `names(t)[t == max(t)]` which yields to 835.
@@ -116,7 +116,7 @@ hist(s1$Total.steps, col = "orange", main = "Histogram for total daily steps", x
 abline(v = c(mean(s1$Total.steps),median(s1$Total.steps)), col = c("yellow","red"), lwd=c(4,1))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
 The mean total number of steps per day = `round(mean(s1$Total.steps))`= 10766 steps.
 
@@ -182,6 +182,6 @@ library(lattice)
 with(s2, xyplot(Mean.steps~interval|day.type, type=c("l","r"), layout=c(1,2), xlab = "Interval", ylab = "Average No. of Steps", main = "Panel plot for avg. no. of steps for weekdays and weekends"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](PA1_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 From the graph, it appears that the No. of steps has a higher trend in weekends than in weekdays.
